@@ -22,13 +22,12 @@ def signal_handler(sig, frame):
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
     ascii_art = """
-       
-░██████╗██╗░░░██╗██████╗░██████╗░███████╗███╗░░░███╗
-██╔════╝██║░░░██║██╔══██╗██╔══██╗██╔════╝████╗░████║
-╚█████╗░██║░░░██║██████╔╝██████╔╝█████╗░░██╔████╔██║
-░╚═══██╗██║░░░██║██╔═══╝░██╔══██╗██╔══╝░░██║╚██╔╝██║
-██████╔╝╚██████╔╝██║░░░░░██║░░██║███████╗██║░╚═╝░██║
-╚═════╝░░╚═════╝░╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═╝░░░░░╚═╝"""
+░██████╗██╗░░░██╗██████╗░██████╗░███████╗███╗░░░███╗███████╗
+██╔════╝██║░░░██║██╔══██╗██╔══██╗██╔════╝████╗░████║██╔════╝
+╚█████╗░██║░░░██║██████╔╝██████╔╝█████╗░░██╔████╔██║█████╗░░
+░╚═══██╗██║░░░██║██╔═══╝░██╔══██╗██╔══╝░░██║╚██╔╝██║██╔══╝░░
+██████╔╝╚██████╔╝██║░░░░░██║░░██║███████╗██║░╚═╝░██║███████╗
+╚═════╝░░╚═════╝░╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═╝░░░░░╚═╝╚══════╝"""
     start_color = Color.parse("#28e99a")
     end_color = Color.parse("#cbd31a")
     start_rgb = np.array(start_color.triplet)
@@ -57,7 +56,7 @@ def banner(console):
     console.print("        [bold][red]  Sharing the Access key is not allowed and will be blocked[/bold][red]")
 
 
-    console.print("   [bold][yellow]   Get in touch with me to buy an unlimited balance[bold][yellow][green][bold]Telegram:-@Unlikely_buisit[/green][/bold]", end="\n\n")
+    console.print("   [bold][yellow]   Get in touch with me to buy an unlimited balance[bold][yellow][green][bold] Telegram:-@Unlikely_buisit [/green][/bold]", end="\n\n")
     
 def load_player_data(cpm):
     response = cpm.get_player_data()
